@@ -23,8 +23,8 @@ public class ConsumeApplication {
     @LoadBalanced
     public RestTemplate getRestTemplate(){
         HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory();
-        clientHttpRequestFactory.setConnectTimeout(10 * 1000);
-        clientHttpRequestFactory.setReadTimeout(30 * 1000);
+        clientHttpRequestFactory.setConnectTimeout(5 * 1000);
+        clientHttpRequestFactory.setReadTimeout(5 * 1000);
         return new RestTemplate(clientHttpRequestFactory);
     }
     @Autowired
