@@ -18,11 +18,11 @@ public class ProviderApplication {
     }
     @GetMapping("provider")
     public String provider(){
-        try {
-            Thread.sleep(20 * 1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(20 * 1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         log.info("..................................");
         return "i am provider2";
     }
